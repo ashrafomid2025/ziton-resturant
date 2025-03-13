@@ -1,0 +1,107 @@
+@import url("fonts/Yekan.ttf");
+
+:root {
+    --colorBg: #fff;
+    --colorText: #222;
+    --colorMain: #01BDBC;
+    --colorMainRGB: 1, 189, 188;
+    --colorSecondary: #2D365D;
+    --colorOrange: #FF8A66;
+    --colorOrangeRGB: 255, 138, 102;
+    --colorPurple: #514EB6;
+    --colorPurpleRGB: 81, 78, 182;
+    --colorSecondaryRGB: 45, 54, 93;
+    --colorSecondaryDark: #222946;
+    --colorGray: #B3BBC7;
+    --colorGreen: #49BE78;
+    --colorGreenRGB: 73, 190, 120;
+    --header-bg: linear-gradient(to right, rgba(241, 241, 241, .64), rgba(var(--colorSecondaryRGB), .6));
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "B Yekan","sans-serif";
+}
+.header{
+    height: 80px;
+    width: 80%;
+    margin: 3px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 15px;
+    justify-content: space-between;
+    background-image: var(--header-bg);
+}
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header-logo i{
+    color: orange;
+    font-size: 20px;
+}
+
+.header-logo h3{
+    font-weight: 700;
+    color: white;
+}
+.btn-login{
+    background-color: white;
+    border: 0;
+    padding: 12px 23px;
+    border-radius:10px;
+    transition: 0.4s;
+}
+.btn-login:hover{
+    color: white;
+    background-color: var(--colorGray);
+}
+.fa-cart-plus{
+    color: #01BDBC;
+    font-size: 20px;
+    margin-right: 8px ;
+}
+.btn-icon{
+    padding: 0 12px;
+}
+/* header section ended */
+/* start of nav section */
+.navbar{
+    height: 50px;
+}
+ul.main{
+    display: flex;
+    
+    justify-content: space-around;
+}
+ul.main li{
+    list-style: none;
+    display: block;
+    
+    /* position: relative; */
+}
+ul.main li a{
+    text-decoration: none;
+    color: var(--colorText);
+}
+.i{
+    position: relative;
+}
+.m-nav{
+    padding: 3px 20px;
+    transition: 5s linear;
+    display: none;
+    position: absolute;        
+}
+.m-nav li a{
+    border-bottom: 1px solid var(--colorGray);
+    display: block;
+    padding: 9px 0;
+}
+#order-ul{
+    display: none;
+}
