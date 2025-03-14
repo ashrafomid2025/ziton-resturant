@@ -87,6 +87,7 @@ ul.main li{
 ul.main li a{
     text-decoration: none;
     color: var(--colorText);
+    font-weight: 500;
 }
 .i{
     position: relative;
@@ -104,4 +105,13 @@ ul.main li a{
 }
 #order-ul{
     display: none;
+}
+.toggle-btn::after {
+    display: inline-block;
+    margin-left: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    content: "";
+    border-left: .3em solid transparent;
 }
