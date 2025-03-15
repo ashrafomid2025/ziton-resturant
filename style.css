@@ -15,6 +15,7 @@
     --colorGray: #B3BBC7;
     --colorGreen: #49BE78;
     --colorGreenRGB: 73, 190, 120;
+    --custom-border: 12px;
     --header-bg: linear-gradient(to right, rgba(241, 241, 241, .64), rgba(var(--colorSecondaryRGB), .6));
 }
 *{
@@ -71,7 +72,7 @@
 /* header section ended */
 /* start of nav section */
 .navbar{
-    height: 50px;
+    height: 40px;
 }
 ul.main{
     display: flex;
@@ -95,13 +96,67 @@ ul.main li a{
     padding: 3px 20px;
     transition: 5s linear;
     display: none;
+    background-color: var(--colorBg);
     position: absolute;        
 }
 .m-nav li a{
-    border-bottom: 1px solid var(--colorGray);
+    /* border-bottom: 1px solid var(--colorGray); */
     display: block;
     padding: 9px 0;
 }
 #order-ul{
     display: none;
+}
+/* nav section ended */
+/* start of hero section */
+.hero{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    background-image: url("img/banner/banner-4.jpg");
+    background-size: cover;
+    background-position: 30% top;
+}
+.hero-form{
+    position: absolute;
+    width: 80%;
+    margin: 12px auto;
+    height: 80%;
+    bottom: -50px;
+    left: 10%;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, .2);
+    background-color: var(--colorBg);
+    border-radius: var(--custom-border);
+}
+.form-hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-hero select{
+    height: 40px;
+    width: 23%;
+    outline: 0;
+    border: 1px solid var(--colorMain);
+    border-radius: var(--custom-border);
+}
+.form-hero input{
+    height: 40px;
+    width: 23%;
+    outline: 0;
+    border: 1px solid var(--colorMain);
+    border-radius: var(--custom-border);
+}
+.form-hero button{
+    padding: 12px 23px;
+    border: 0;
+    background-color: var(--colorMain);
+    border-radius: var(--custom-border);
+    color: white;
+}
+.form-hero button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
 }
