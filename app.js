@@ -23,7 +23,7 @@ service.addEventListener("click",()=>{
         serviceM.style.display = "block";
     }
 });
-
+// 
 clic.addEventListener("click",()=>{
     if(navm.style.display =="block"){
         navm.style.display = "none"
