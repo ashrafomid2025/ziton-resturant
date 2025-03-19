@@ -13,6 +13,7 @@
     --colorSecondaryRGB: 45, 54, 93;
     --colorSecondaryDark: #222946;
     --colorGray: #B3BBC7;
+    --advertisement-color: #af1122;
     --colorGreen: #49BE78;
     --colorGreenRGB: 73, 190, 120;
     --custom-border: 12px;
@@ -270,42 +271,60 @@ form-hero select option{
 .fa-star{
     color: gold;
 }
-/*  */
-.r{
-    width: 95%;
-
-    margin: 12px auto;
+.pagination{
+    text-align: center;
+}
+.pagination button{
+    height: 40px;
+    width: 40px;
+    border: 0;
+    background-color: var(--colorMain);
+    border-radius: 5px;
+    color: white;
+    line-height: 40px;
+}
+/* apartement section ended */
+/* advertisement start */
+.ad{
+    margin: 12px 0;
+    width: 100%;
+    height: 50vh;
     display: grid;
-    height: 400px;
-    
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
 }
-.p {
-    background-size: cover;
-    padding: 12px 30px;
-    background-image: url("img/banner/banner-1.png");
-    background-color: var(--colorMain);
+.ad-text{
     color: white;
+    padding: 12px 20px;
     border-radius: var(--custom-border);
-    /* background-image: linear-gradient(to right, transparent 70%, var(--colorMain)); */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1410' height='545' preserveAspectRatio='none' viewBox='0 0 1410 545'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath2208%26quot%3b)' fill='none'%3e%3ccircle r='37.87' cx='233.93' cy='331.32' fill='url(%26quot%3b%23SvgjsLinearGradient2209%26quot%3b)'%3e%3c/circle%3e%3ccircle r='30.88' cx='1318.6' cy='48.16' fill='url(%26quot%3b%23SvgjsLinearGradient2210%26quot%3b)'%3e%3c/circle%3e%3ccircle r='47.17' cx='417.29' cy='315.74' fill='url(%26quot%3b%23SvgjsLinearGradient2211%26quot%3b)'%3e%3c/circle%3e%3ccircle r='23.37' cx='1228.38' cy='305.59' fill='url(%26quot%3b%23SvgjsLinearGradient2212%26quot%3b)'%3e%3c/circle%3e%3ccircle r='26.945' cx='93.11' cy='451.11' fill='url(%26quot%3b%23SvgjsLinearGradient2213%26quot%3b)'%3e%3c/circle%3e%3ccircle r='31.285' cx='1374.93' cy='104.08' fill='url(%26quot%3b%23SvgjsLinearGradient2214%26quot%3b)'%3e%3c/circle%3e%3ccircle r='15.885' cx='308.67' cy='270.99' fill='url(%26quot%3b%23SvgjsLinearGradient2215%26quot%3b)'%3e%3c/circle%3e%3ccircle r='33.695' cx='1100.09' cy='373.03' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='27.735' cx='249.39' cy='176.06' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='51.28' cx='508.06' cy='426.83' fill='url(%26quot%3b%23SvgjsLinearGradient2216%26quot%3b)'%3e%3c/circle%3e%3ccircle r='34.865' cx='836.41' cy='538.85' fill='url(%26quot%3b%23SvgjsLinearGradient2217%26quot%3b)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath2208'%3e%3crect width='1410' height='545' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='158.19' y1='331.32' x2='309.66999999999996' y2='331.32' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2209'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1256.84' y1='48.16' x2='1380.36' y2='48.16' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2210'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(70%2c 99%2c 135%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='322.95000000000005' y1='315.74' x2='511.63000000000005' y2='315.74' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2211'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1181.64' y1='305.59' x2='1275.1200000000001' y2='305.59' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2212'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='39.22' y1='451.11' x2='147' y2='451.11' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2213'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1312.3600000000001' y1='104.08' x2='1437.5000000000002' y2='104.08' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2214'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='276.90000000000003' y1='270.99' x2='340.44000000000005' y2='270.99' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2215'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='405.5' y1='426.83' x2='610.62' y2='426.83' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2216'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='766.68' y1='538.85' x2='906.14' y2='538.85' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2217'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(70%2c 99%2c 135%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    
+    background-color: var(--advertisement-color);
+    background-size: cover;
 }
-.q{
-
-    /* gap: 5px; */
-    border-radius: 12px;
-
+.awards{
+    padding: 12px;
 }
-.m{
+.award-img{
     display: flex;
-    justify-content: space-evenly;
+    height: 100%;
     align-items: center;
+    justify-content: space-evenly;
 }
-.q img{
-    height: 100px;
-    width: 100px;
-    border-radius: 12px;
+.award-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: var(--custom-border);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
 }
-.q img.centerImg{
-    transform: scale(1.7);
+img.center-award{
+    transform: scale(1.4);
+
 }
+footer{
+    display: flex;
+    
+}
+
