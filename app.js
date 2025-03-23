@@ -6,6 +6,24 @@ const service = document.getElementById("service");
 const serviceM = document.getElementById("service-m");
 const contact = document.getElementById("contact");
 const constactM = document.getElementById("contact-m");
+
+const tabletNav = document.getElementById("tabletnav");
+const ulMain = document.getElementById("mainUL");
+const close = document.getElementById("close");
+close.addEventListener("click",()=>{
+    ulMain.classList.remove("rightAlign");
+    tabletNav.style.display = "block";
+    close.style.display = "none";
+
+})
+
+tabletNav.addEventListener("click",()=>{
+    ulMain.classList.add("rightAlign");
+    tabletNav.style.display = "none";
+    close.style.display = "block";
+})
+
+
 contact.addEventListener("click",()=>{
     if(constactM.style.display=="block"){
         constactM.style.display = "none";

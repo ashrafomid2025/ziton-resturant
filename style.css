@@ -363,32 +363,47 @@ footer div ul li a {
 .footer-info-text{
     width: 30%;
 }
-footer ul li a{
-
+.fa-indent{
+   float: left;
+   margin-top: 14px;
+   margin-left:20px;
+   font-size: 20px; 
+   display: none;
 }
 
-
+.fa-times{
+    float: left;
+    margin-top: 14px;
+    margin-left:20px;
+    font-size: 20px; 
+    display: none;
+}
 
 
 
 
 
 /* media query */
-/* mobile */
-@media (max-width:500px){
-
-}
-/* tablet */
 @media (max-width: 768px){
-    ul.main {
-        display: none;
-    }
-    ul.main li {
-        list-style: none;
-       
-        /* position: relative; */
-    }
-    .fa-bars{
+    .fa-indent{
         display: block;
     }
+    ul.main {
+        display: flex;
+        height: 100vh;
+        width: 300px;
+        flex-direction: column;
+        z-index: 999;
+        position: fixed;
+        background-color: white;
+        right: -300px;
+        top: 80px;
+        transition: 2s;
+        align-items: center;
+        justify-content: space-around;
+    }
+    ul.main.rightAlign{
+        right: 0;
+    }
+    
 }
