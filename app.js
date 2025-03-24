@@ -24,6 +24,7 @@ tabletNav.addEventListener("click",()=>{
 })
 
 
+
 contact.addEventListener("click",()=>{
     if(constactM.style.display=="block"){
         constactM.style.display = "none";

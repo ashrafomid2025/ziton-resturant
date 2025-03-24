@@ -384,7 +384,7 @@ footer div ul li a {
 
 
 /* media query */
-@media (max-width: 768px){
+@media (max-width: 800px){
     .fa-indent{
         display: block;
     }
@@ -405,5 +405,42 @@ footer div ul li a {
     ul.main.rightAlign{
         right: 0;
     }
+    .hero {
+        height: 30vh;
+      
+       
+    }
+    .hero-form{
+        width: 90%;
+        margin: 0 auto;
+        height: 50%;
+        bottom: -20px;
+        left: 5%;
+        box-shadow: 10px 10px 9px rgba(0, 0, 0, .2);
+        background-color: var(--colorBg);
+        border-radius: var(--custom-border);
+    }
+    .banners {
+        width: 95%;
+        margin: 100px auto 0;
+    }
+    .sm-1 {
+        
+        width: 48%;
+       
+    }
+    .sm-2 {
+     
+        width: 48%;
+       
+    }
+    .ad{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 34px 0;
+    }
+  
     
 }
