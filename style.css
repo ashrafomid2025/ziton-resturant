@@ -407,8 +407,6 @@ footer div ul li a {
     }
     .hero {
         height: 30vh;
-      
-       
     }
     .hero-form{
         width: 90%;
@@ -443,4 +441,119 @@ footer div ul li a {
     }
   
     
+}
+
+
+@media (max-width: 500px){
+    .header {
+        height: 80px;
+        width: 90%;
+        margin: 3px 0;
+    
+    
+        padding: 0 8px;
+        justify-content: space-between;
+        
+    }
+    .header-logo h3 {
+        font-weight: 200;
+        color: white;
+        font-size: 14px;
+    }
+    .btn-login {
+        
+      
+       
+        padding: 12px 5px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .navbar {
+        height: 30px;
+        width: 100%;
+    }
+  
+    .hero {
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        background-image: url("img/banner/banner-4.jpg");
+        background-size: cover;
+        background-position: 30% top;
+    }
+    .hero-form{
+        position: absolute;
+        width: 95%;
+        margin: 12px auto;
+        height: 100%;
+        bottom: -20px;
+        left: 2.5%;
+      
+       
+    }
+    .form-hero{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .form-hero input {
+     
+        width: 80%;
+        
+    }
+    .banners {
+        width: 95%;
+        margin: 30px auto 0;
+    }
+    .form-hero select {
+      
+        width: 80%;
+       
+    }
+    .banners .small-banners{
+        width: 90%;
+        margin: 10px auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        justify-content: space-between;
+    }
+    .sm-1{
+        width: 90%;
+    }
+    .sm-2{
+        width: 90%;
+    }
+    .ad {
+        height: fit-content;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 34px 0;
+    }
+    .award-img {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+        justify-content: space-evenly;
+    }
+    footer {
+        display: flex;
+        background-color: var(--colorText);
+        color: white;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 12px 20px;
+        justify-content: space-between;
+    }
+    .footer-info-text{
+        width: 90%;
+        margin: 10px auto;
+        overflow: hidden;
+    }
 }
