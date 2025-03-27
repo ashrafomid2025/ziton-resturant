@@ -77,6 +77,9 @@
 .navbar{
     height: 40px;
 }
+.navbarService{
+    height: 40px;
+}
 .fa-bars{
     display: none;
 }
@@ -91,7 +94,17 @@ ul.main li{
     
     /* position: relative; */
 }
+ul.mainService li{
+    list-style: none;
+    display: block;
+    
+    /* position: relative; */
+}
 ul.main li a{
+    text-decoration: none;
+    color: var(--colorText);
+}
+ul.mainService li a{
     text-decoration: none;
     color: var(--colorText);
 }
@@ -124,6 +137,14 @@ ul.main li a{
     background-size: cover;
     background-position: 30% top;
 }
+.heroService{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: url("img/banner/banner-3.jpg");
+    background-size: cover;
+    background-position: 30% top;
+}
 .hero-form{
     position: absolute;
     width: 80%;
@@ -134,6 +155,24 @@ ul.main li a{
     box-shadow: 10px 10px 9px rgba(0, 0, 0, .2);
     background-color: var(--colorBg);
     border-radius: var(--custom-border);
+}
+
+.hero-formService{
+    position: absolute;
+    width: 80%;
+    margin: 12px auto;
+    height: 80%;
+    bottom: 3px;
+    left: 10%;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, .2);
+    background-color: var(--colorBg);
+    border-radius: var(--custom-border);
+}
+.form-hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .form-hero{
     height: 100%;
@@ -378,7 +417,92 @@ footer div ul li a {
     font-size: 20px; 
     display: none;
 }
+/* styles of service page */
+/* service section start */
+.service{
+    display: grid;
+    width: 90%;
+    margin: 20px auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+}
+.img-address{
+    width: 200px;
+    height: 170px;
+    margin: 2px 0;
+}
+.img-address img{
+    height: 100%;
+    width: 100%;
+}
+.hotel-grade{
+    position: relative;
+}
+.hotel-grade::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 200px;
+    height: 1px;
+    background-color: var(--colorGray);
+}
+.aprt-type{
+    margin: 30px 0;
+}
+.service-container{
+    width: 90%;
+    margin: 12px auto;
+}
+.service-container .single-card{
+    display: flex;
 
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.service-container .single-card .img-container  img{
+    width: 150px;
+    height: 150px;
+}
+.service-container .single-card .img-container::after{
+    content: "تخفیف ویژه";
+    background-color: #af1122;
+    color: white;
+    height: 20px;
+    width: fit-content;
+    padding: 12px 14px;
+    z-index: 999;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 12px;
+
+}
+.service-container .single-card .img-container button{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #02bd7d;
+    color: white;
+    padding: 12px;
+    border: 0;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 4px;
+    left: 5%;
+
+}
+.container-text{
+    display: flex;
+    padding: 5px 20px;
+    flex-direction: column;
+}
+/* service section ended */
 
 
 
@@ -402,7 +526,24 @@ footer div ul li a {
         align-items: center;
         justify-content: space-around;
     }
+    ul.mainService {
+        display: flex;
+        height: 100vh;
+        width: 300px;
+        flex-direction: column;
+        z-index: 999;
+        position: fixed;
+        background-color: white;
+        right: -300px;
+        top: 5px;
+        transition: 2s;
+        align-items: center;
+        justify-content: space-around;
+    }
     ul.main.rightAlign{
+        right: 0;
+    }
+    ul.mainService.rightAlign{
         right: 0;
     }
     .hero {
@@ -556,4 +697,5 @@ footer div ul li a {
         margin: 10px auto;
         overflow: hidden;
     }
+
 }
