@@ -88,6 +88,11 @@ ul.main{
     align-items: center;
     justify-content: space-around;
 }
+ul.mainService{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 ul.main li{
     list-style: none;
     display: block;
@@ -367,25 +372,38 @@ img.center-award{
 }
 footer{
     display: flex;
-    background-color: var(--colorText);
-    color: white;
+    background-color: white;
+    color: black;
     padding: 12px 20px;
-    justify-content: space-between;
+    position: relative;
+    justify-content: space-evenly;
+}
+footer::before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--colorGray);
 }
 footer div ul{
     display: block;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 footer div ul li{
+    padding: 12px 0;
     list-style: none;
 }
 footer div ul li a {
-    color: white;
+    color: black;
     font-size: clamp(14px,16px,20px);
     text-decoration: none;
 }
 .social-media-f{
     display: flex;
-    height: 100%;
+    padding: 23px 0;
     align-items: center;
 }
 .social-media-f li a{
@@ -451,8 +469,9 @@ footer div ul li a {
     margin: 30px 0;
 }
 .service-container{
-    width: 90%;
+    width: 100%;
     margin: 12px auto;
+    padding: 0 12px 0 0 0;
 }
 .service-container .single-card{
     display: flex;
@@ -466,6 +485,13 @@ footer div ul li a {
 .service-container .single-card .img-container  img{
     width: 150px;
     height: 150px;
+}
+
+.service-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .service-container .single-card .img-container::after{
     content: "تخفیف ویژه";
